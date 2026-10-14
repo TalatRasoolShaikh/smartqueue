@@ -1,0 +1,25 @@
+{
+  "name": "public-service-queue-optimizer",
+  "version": "1.0.0",
+  "description": "Production-ready Real-Time Queue Management & Wait-Time Optimizer (SC-03) with digital tokens, live tracking, public lobby display, staff operator dashboard, analytics, and dynamic arrival simulator.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "queue-management",
+    "wait-time-optimizer",
+    "socket.io",
+    "real-time",
+    "simulation",
+    "smart-city"
+  ],
+  "author": "Smart City Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}

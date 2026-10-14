@@ -1,0 +1,484 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "General Inquiries",
+      "code_prefix": "A",
+      "avg_service_time_sec": 968,
+      "total_served": 14
+    },
+    {
+      "id": 2,
+      "name": "Billing & Payments",
+      "code_prefix": "B",
+      "avg_service_time_sec": 186,
+      "total_served": 19
+    },
+    {
+      "id": 3,
+      "name": "Document Processing",
+      "code_prefix": "C",
+      "avg_service_time_sec": 194,
+      "total_served": 10
+    }
+  ],
+  "counters": [
+    {
+      "id": 1,
+      "counter_number": 1,
+      "status": "OPEN",
+      "assigned_staff_name": "Sarah Jenkins",
+      "current_token_id": 9,
+      "categories_handled": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "counter_number": 2,
+      "status": "OPEN",
+      "assigned_staff_name": "David Miller",
+      "current_token_id": 4,
+      "categories_handled": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "counter_number": 3,
+      "status": "OPEN",
+      "assigned_staff_name": "Elena Rostova",
+      "current_token_id": null,
+      "categories_handled": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 4,
+      "counter_number": 4,
+      "status": "PAUSED",
+      "assigned_staff_name": "Marcus Vance",
+      "current_token_id": null,
+      "categories_handled": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "id": 1,
+      "token_number": "A-101",
+      "category_id": 1,
+      "counter_id": 1,
+      "citizen_name": "Alice Walker",
+      "citizen_phone": "555-0114",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:05:13.159Z",
+      "called_at": "2026-10-13T18:06:43.159Z",
+      "completed_at": "2026-10-13T18:09:38.159Z",
+      "estimated_wait_min": 10
+    },
+    {
+      "id": 2,
+      "token_number": "B-201",
+      "category_id": 2,
+      "counter_id": 2,
+      "citizen_name": "Bob Smith",
+      "citizen_phone": "555-0179",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:07:13.159Z",
+      "called_at": "2026-10-13T18:08:43.159Z",
+      "completed_at": "2026-10-13T18:10:33.159Z",
+      "estimated_wait_min": 8
+    },
+    {
+      "id": 3,
+      "token_number": "A-102",
+      "category_id": 1,
+      "counter_id": 1,
+      "citizen_name": "Carlos Gomez",
+      "citizen_phone": "555-0146",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:09:13.159Z",
+      "called_at": "2026-10-13T18:10:43.159Z",
+      "completed_at": "2026-10-14T03:23:08.900Z",
+      "estimated_wait_min": 6
+    },
+    {
+      "id": 4,
+      "token_number": "B-202",
+      "category_id": 2,
+      "counter_id": 2,
+      "citizen_name": "Diana Prince",
+      "citizen_phone": "555-0113",
+      "status": "SERVING",
+      "created_at": "2026-10-13T18:11:13.159Z",
+      "called_at": "2026-10-13T18:12:43.159Z",
+      "completed_at": null,
+      "estimated_wait_min": 4
+    },
+    {
+      "id": 5,
+      "token_number": "C-301",
+      "category_id": 3,
+      "counter_id": 1,
+      "citizen_name": "Evan Wright",
+      "citizen_phone": "555-0147",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:12:13.159Z",
+      "called_at": "2026-10-14T03:23:12.853Z",
+      "completed_at": "2026-10-14T03:24:51.365Z",
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 6,
+      "token_number": "A-103",
+      "category_id": 1,
+      "counter_id": 1,
+      "citizen_name": "Fiona Gallagher",
+      "citizen_phone": "555-0148",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:13:13.159Z",
+      "called_at": "2026-10-14T03:24:53.690Z",
+      "completed_at": "2026-10-14T03:29:26.270Z",
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 7,
+      "token_number": "B-203",
+      "category_id": 2,
+      "counter_id": 1,
+      "citizen_name": "George Clark",
+      "citizen_phone": "555-0130",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:14:13.159Z",
+      "called_at": "2026-10-14T03:29:28.515Z",
+      "completed_at": "2026-10-14T03:35:52.279Z",
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 8,
+      "token_number": "C-302",
+      "category_id": 3,
+      "counter_id": 1,
+      "citizen_name": "Hannah Abbott",
+      "citizen_phone": "555-0181",
+      "status": "COMPLETED",
+      "created_at": "2026-10-13T18:14:53.159Z",
+      "called_at": "2026-10-14T03:35:54.795Z",
+      "completed_at": "2026-10-14T03:36:21.452Z",
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 9,
+      "token_number": "A-104",
+      "category_id": 1,
+      "counter_id": 1,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "SERVING",
+      "created_at": "2026-10-13T18:17:05.731Z",
+      "called_at": "2026-10-14T03:36:25.720Z",
+      "completed_at": null,
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 10,
+      "token_number": "C-303",
+      "category_id": 3,
+      "counter_id": null,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "WAITING",
+      "created_at": "2026-10-13T18:18:33.410Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 11,
+      "token_number": "B-204",
+      "category_id": 2,
+      "counter_id": null,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "WAITING",
+      "created_at": "2026-10-13T18:24:57.273Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 12,
+      "token_number": "A-105",
+      "category_id": 1,
+      "counter_id": null,
+      "citizen_name": "ibrHEEM",
+      "citizen_phone": "097986",
+      "status": "WAITING",
+      "created_at": "2026-10-14T03:02:08.402Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 13,
+      "token_number": "B-205",
+      "category_id": 2,
+      "counter_id": null,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "WAITING",
+      "created_at": "2026-10-14T03:21:38.445Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 1
+    },
+    {
+      "id": 14,
+      "token_number": "B-206",
+      "category_id": 2,
+      "counter_id": null,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "WAITING",
+      "created_at": "2026-10-14T03:24:31.021Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 2
+    },
+    {
+      "id": 15,
+      "token_number": "B-207",
+      "category_id": 2,
+      "counter_id": null,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "WAITING",
+      "created_at": "2026-10-14T03:28:36.553Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 3
+    },
+    {
+      "id": 16,
+      "token_number": "A-106",
+      "category_id": 1,
+      "counter_id": null,
+      "citizen_name": "Citizen",
+      "citizen_phone": "",
+      "status": "WAITING",
+      "created_at": "2026-10-14T03:35:22.654Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 8
+    },
+    {
+      "id": 17,
+      "token_number": "B-208",
+      "category_id": 2,
+      "counter_id": null,
+      "citizen_name": "ibrHEEM",
+      "citizen_phone": "097986",
+      "status": "WAITING",
+      "created_at": "2026-10-14T04:09:23.710Z",
+      "called_at": null,
+      "completed_at": null,
+      "estimated_wait_min": 4
+    }
+  ],
+  "logs": [
+    {
+      "id": 1,
+      "timestamp": "2026-10-13T18:17:05.731Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 9,
+      "token_number": "A-104",
+      "category_id": 1,
+      "counter_id": null
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-10-13T18:18:33.410Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 10,
+      "token_number": "C-303",
+      "category_id": 3,
+      "counter_id": null
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-10-13T18:24:57.273Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 11,
+      "token_number": "B-204",
+      "category_id": 2,
+      "counter_id": null
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-10-14T03:02:08.402Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 12,
+      "token_number": "A-105",
+      "category_id": 1,
+      "counter_id": null
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-10-14T03:21:38.445Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 13,
+      "token_number": "B-205",
+      "category_id": 2,
+      "counter_id": null
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-10-14T03:23:08.968Z",
+      "event_type": "TOKEN_COMPLETED",
+      "token_id": 3,
+      "token_number": "A-102",
+      "category_id": 1,
+      "counter_id": 1,
+      "service_time_sec": 33146
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-10-14T03:23:12.857Z",
+      "event_type": "TOKEN_CALLED",
+      "token_id": 5,
+      "token_number": "C-301",
+      "category_id": 3,
+      "counter_id": 1,
+      "wait_time_sec": 33060
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-10-14T03:24:31.021Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 14,
+      "token_number": "B-206",
+      "category_id": 2,
+      "counter_id": null
+    },
+    {
+      "id": 9,
+      "timestamp": "2026-10-14T03:24:51.414Z",
+      "event_type": "TOKEN_COMPLETED",
+      "token_id": 5,
+      "token_number": "C-301",
+      "category_id": 3,
+      "counter_id": 1,
+      "service_time_sec": 99
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-10-14T03:24:53.698Z",
+      "event_type": "TOKEN_CALLED",
+      "token_id": 6,
+      "token_number": "A-103",
+      "category_id": 1,
+      "counter_id": 1,
+      "wait_time_sec": 33101
+    },
+    {
+      "id": 11,
+      "timestamp": "2026-10-14T03:28:36.553Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 15,
+      "token_number": "B-207",
+      "category_id": 2,
+      "counter_id": null
+    },
+    {
+      "id": 12,
+      "timestamp": "2026-10-14T03:29:26.333Z",
+      "event_type": "TOKEN_COMPLETED",
+      "token_id": 6,
+      "token_number": "A-103",
+      "category_id": 1,
+      "counter_id": 1,
+      "service_time_sec": 273
+    },
+    {
+      "id": 13,
+      "timestamp": "2026-10-14T03:29:28.520Z",
+      "event_type": "TOKEN_CALLED",
+      "token_id": 7,
+      "token_number": "B-203",
+      "category_id": 2,
+      "counter_id": 1,
+      "wait_time_sec": 33315
+    },
+    {
+      "id": 14,
+      "timestamp": "2026-10-14T03:35:22.654Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 16,
+      "token_number": "A-106",
+      "category_id": 1,
+      "counter_id": null
+    },
+    {
+      "id": 15,
+      "timestamp": "2026-10-14T03:35:52.337Z",
+      "event_type": "TOKEN_COMPLETED",
+      "token_id": 7,
+      "token_number": "B-203",
+      "category_id": 2,
+      "counter_id": 1,
+      "service_time_sec": 384
+    },
+    {
+      "id": 16,
+      "timestamp": "2026-10-14T03:35:54.808Z",
+      "event_type": "TOKEN_CALLED",
+      "token_id": 8,
+      "token_number": "C-302",
+      "category_id": 3,
+      "counter_id": 1,
+      "wait_time_sec": 33662
+    },
+    {
+      "id": 17,
+      "timestamp": "2026-10-14T03:36:21.510Z",
+      "event_type": "TOKEN_COMPLETED",
+      "token_id": 8,
+      "token_number": "C-302",
+      "category_id": 3,
+      "counter_id": 1,
+      "service_time_sec": 27
+    },
+    {
+      "id": 18,
+      "timestamp": "2026-10-14T03:36:25.741Z",
+      "event_type": "TOKEN_CALLED",
+      "token_id": 9,
+      "token_number": "A-104",
+      "category_id": 1,
+      "counter_id": 1,
+      "wait_time_sec": 33560
+    },
+    {
+      "id": 19,
+      "timestamp": "2026-10-14T04:09:23.711Z",
+      "event_type": "TOKEN_CREATED",
+      "token_id": 17,
+      "token_number": "B-208",
+      "category_id": 2,
+      "counter_id": null
+    }
+  ],
+  "counters_sequence": {
+    "A": 106,
+    "B": 208,
+    "C": 303
+  }
+}
